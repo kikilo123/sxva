@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root{
+--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: "Manrope", sans-serif;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+
+.container .images-text-img-sheiar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.container .images-text-img-sheiar .images img{
+    width: 300px;
+    height:300px;
+    border-radius: 10px 0px 0px 10px;
+    object-fit:cover;
+    object-position: 10% 80%; 
+}
+
+.container .images-text-img-sheiar .text-img-shear{
+    
+    height: 300px;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.container .images-text-img-sheiar .text-img-shear .text{
+    padding: 30px;
+}
+
+.container .images-text-img-sheiar .text-img-shear .text h2{
+    font-size: 20px;
+    color: var(--Very-Dark-Grayish-Blue);
+    margin-bottom: 20px;
+    width: 350px;
+    font-family: 600;
+}
+
+.container .images-text-img-sheiar .text-img-shear .text p{
+    color: var(--Desaturated-Dark-Blue);
+    /* margin-bottom: 20px; */
+    width: 345px;
+    font-family: 600;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.container .images-text-img-sheiar .text-img-shear .img-shear{
+    display: flex;
+    gap: 15px;
+}
+.container .images-text-img-sheiar .text-img-shear .img-shear .img img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+.container .images-text-img-sheiar .text-img-shear .img-shear .date-nom p{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: 600;
+}
+.container .images-text-img-sheiar .text-img-shear .img-shear .date-nom span{
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 12px;
+    font-family: 600;
+}
+
+.container .images-text-img-sheiar .text-img-shear .img-shear .sheiar{
+    position: relative;
+    margin-left: 135px;
+    margin-top: 10px;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+    padding: 7px;
+    transition: all 0.5s ease-in-out;
+}
+
+.container .images-text-img-sheiar .text-img-shear .img-shear .sheiar:hover{
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+.container .images-text-img-sheiar .text-img-shear .img-shear .sheiar i{
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+.container .images-text-img-sheiar .text-img-shear .img-shear .sheiar:hover i{
+    color: white;
+}
+
+
+.container .shear-bro{
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left:64%;
+    top: 48%;
+    opacity: 0;
+}
+
+.container .shear-bro .shear-fb-tw-pin {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.pe{
+    color: var(--Grayish-Blue);
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.container .shear-bro .shear-fb-tw-pin i{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* .wvero{
+    width: 18px;
+    height: 18px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    z-index: -1;
+    border-top: 20px solid var(--Very-Dark-Grayish-Blue);
+    border-left: 5px solid var(--Light-Grayish-Blue);
+    border-right: 5px solid var(--Light-Grayish-Blue);
+    border-bottom: 10px solid var(--Very-Dark-Grayish-Blue);
+    position: absolute; 
+    top: 480px;
+    left: 70px;
+} */
+
+
+.wvero{
+    position: absolute;
+    /* bottom: 20px; Adjust the pointer position */
+    /* transform: translateX(749%); */
+    width: 0;
+    height: 0;
+    top: 53.1%;
+    left:69%;
+    border-left: 10px solid #ffffff;
+    /* border-right: 10px solid transparent; */
+    border-top: 10px solid var(--Very-Dark-Grayish-Blue); /* Adjust the size and angle of the pointer */
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-right: 10px solid #ffffff;
+    opacity: 0;
+  }
+
+
+  .active{
+    animation: shearebro 1s forwards;
+  }
+
+
+  @keyframes shearebro{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
